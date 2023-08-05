@@ -190,6 +190,14 @@ a.admonition-anchor-link {
 }
 
 summary.admonition-title {
+  details.admonition > & {
+    list-style: none;
+  }
+
+  details.admonition > &::-webkit-details-marker {
+    display: none;
+  }
+
   details.admonition > &::after {
     position: absolute;
     top: .625em;
